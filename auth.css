@@ -1,0 +1,89 @@
+/* ════════════════════════════════════════
+   auth.css — Login & Register screens
+════════════════════════════════════════ */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+/* ── Shell ── */
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--sp-lg);
+  background:
+    radial-gradient(ellipse at 20% 50%, #1a1050 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, #0d2040 0%, transparent 60%),
+    var(--bg);
+}
+
+/* ── Card ── */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--sp-2xl) 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-lg);
+  animation: slideUp .4s ease;
+}
+
+/* ── Branding ── */
+.auth-logo {
+  font-family: var(--font-head);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: var(--sp-xs);
+}
+.auth-logo span { color: var(--accent); }
+
+.auth-tagline {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: var(--sp-xl);
+}
+
+/* ── Form title ── */
+.auth-title {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: var(--sp-lg);
+}
+
+/* ── Switch link ── */
+.auth-switch {
+  text-align: center;
+  margin-top: var(--sp-md);
+  font-size: 13px;
+  color: var(--muted);
+}
+.auth-switch button {
+  color: var(--accent);
+  font-size: 13px;
+  font-family: var(--font-body);
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.auth-switch button:hover {
+  text-decoration: underline;
+}
+
+/* ── Error banner ── */
+.error-msg {
+  background: var(--danger-bg);
+  color: var(--danger);
+  border: 1px solid var(--danger-bdr);
+  padding: 10px 14px;
+  border-radius: var(--r-sm);
+  font-size: 13px;
+  margin-bottom: var(--sp-md);
+  animation: fadeIn .2s ease;
+}
